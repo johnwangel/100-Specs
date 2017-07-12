@@ -1397,6 +1397,12 @@ Vehicle.prototype.drive = function( streetName ) {
  * and the dayOfTheWeek is "Monday", return true.  Else return false.
  *
  */
+ Cookie.prototype.swipedByCookieMonster = function( dayOfTheWeek ) {
+  if ( this.flavor === 'chocolate' && dayOfTheWeek === 'Monday' ) {
+    return true;
+  }
+  return false;
+ };
 
 
  /* Step 90
