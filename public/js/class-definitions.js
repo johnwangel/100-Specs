@@ -209,7 +209,13 @@ let gender = { female : 'female', male : 'male', unknown : undefined };
  * "cytosine"
  *
  */
-
+ let DNA = [
+    "nucleatides",
+    "guanine",
+    "adenine",
+    "thymine",
+    "cytosine"
+ ];
 
 /* Step 16
  *
