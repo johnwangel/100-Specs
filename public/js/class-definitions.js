@@ -1229,6 +1229,20 @@ var dinner = new Meal( ['fish', 'vegetables']);
  *
  */
 
+ Animal.prototype.isWarmBlooded = function( ) {
+    switch (this.species) {
+      case "Fish":
+        return false;
+        break;
+      case 'Monkey':
+      case 'Bird':
+        return true;
+        break;
+      default:
+        return "Could not determine if warm-blooded";
+    }
+ }
+
 
 /* Step 82
  *
@@ -1237,6 +1251,12 @@ var dinner = new Meal( ['fish', 'vegetables']);
  * return "Driving on {streetName}", else return "Driving forward".
  *
  */
+Vehicle.prototype.drive = function( streetName ) {
+  if (typeof streetName === 'string' && streetName !== '' ){
+    return `Driving on ${streetName}`;
+  }
+  return 'Driving forward';
+}
 
 
  /* Step 83
