@@ -373,6 +373,30 @@ function sahara_river() {
  *
  */
 
+ function drink( beer ) {
+    let mykeys = Object.keys(beers);
+    let isValid = mykeys.some( obj => obj === beer );
+    console.log(typeof beers[beer]);
+
+    if (isValid && typeof beers[beer] === 'string') {
+      return `This ${beer} is ${beers[beer]}.`;
+
+    } else if (isValid && typeof beers[beer] === 'object' ) {
+      let str = `This ${beer} is `;
+      let arr = beers[beer];
+      for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === arr.length-1){
+          str += `${arr[i]}.`;
+        } else {
+          str += `${arr[i]} and `;
+        }
+      }
+      return str;
+    } else {
+      return false;
+    }
+ }
+
 
 /* Step 24
  *
