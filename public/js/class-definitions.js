@@ -249,7 +249,15 @@ let gender = { female : 'female', male : 'male', unknown : undefined };
  * "Species"
  *
  */
-
+ let livingOrganismClassification = [
+    "Kingdom",
+    "Phylum",
+    "Class",
+    "Order",
+    "Family",
+    "Genus",
+    "Species"
+ ];
 
 /* Step 18
  *
