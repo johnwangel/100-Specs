@@ -1085,6 +1085,12 @@ class Vehicle {
  * @param {boolean} isOpen Whether the door is opened or closed
  */
 
+class Door {
+  constructor( isOpen ) {
+    this.isOpen = isOpen;
+  }
+}
+
 
 /**
  * Step 55
@@ -1094,6 +1100,13 @@ class Vehicle {
  * @param {string} color The shoe color
  */
 
+class Shoe {
+  constructor( size, color ) {
+    this.size = size;
+    this.color = color;
+  }
+}
+
 
 /**
  * Step 56
@@ -1102,6 +1115,12 @@ class Vehicle {
  * @param {number} stories How many stories tall the house is
  */
 
+ class House {
+  constructor( stories ) {
+    this.stories = stories;
+  }
+}
+
 
 /**
  * Step 57
@@ -1109,7 +1128,11 @@ class Vehicle {
  * Lightbulb class
  * @param {boolean} isOn Whether the light is on or off
  */
-
+ class Lightbulb {
+  constructor( isOn ) {
+    this.isOn = isOn;
+  }
+}
 
 /**
  * Step 58
@@ -1117,7 +1140,11 @@ class Vehicle {
  * Cookie class
  * @param {string} flavor The cookie's flavor
  */
-
+ class Cookie {
+  constructor( flavor ) {
+    this.flavor = flavor;
+  }
+}
 
 /**
  * Step 59
@@ -1125,6 +1152,12 @@ class Vehicle {
  * Meal class
  * @param {Array} foods All the foods in the meal
  */
+
+  class Meal {
+  constructor( foods ) {
+    this.foods = foods;
+  }
+}
 
 
 /**
