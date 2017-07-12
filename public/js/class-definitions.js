@@ -52,6 +52,7 @@ let unicorn = null;
  * and assign the value of golden_ratio to 1.61803398874
  *
  */
+ let golden_ratio = 1.61803398874;
 
 
 /* Step 7
