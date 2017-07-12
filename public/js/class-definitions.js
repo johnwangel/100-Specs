@@ -1252,28 +1252,20 @@ Vehicle.prototype.drive = function( streetName ) {
   switch (this.sides) {
     case 3:
       return 'triangle';
-      break;
     case 4:
       return 'quadrilateral';
-      break;
     case 5:
       return 'pentagon';
-      break;
     case 6:
       return 'hexagon';
-      break;
     case 7:
       return 'heptagon';
-      break;
     case 8:
       return 'octagon';
-      break;
     case 9:
       return 'nonagon';
-      break;
     case 10:
       return 'decagon';
-      break;
     default:
       return 'Could not determine type';
   }
@@ -1503,8 +1495,8 @@ var blackShoesSize10 = new Shoe(10, 'black').findShoes();
  * and assign the values to each variable below.
  *
  */
-var farTooTallAStory;
-var shortStory;
+var farTooTallAStory = new House(10).isATallStory(2);
+var shortStory = new House(1).isATallStory();
 
 
  /* Step 98
