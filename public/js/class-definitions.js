@@ -1419,6 +1419,15 @@ Vehicle.prototype.drive = function( streetName ) {
  *
  */
 
+ Meal.prototype.containsJunkFood = function() {
+  let junkFood = ["chips", "soda", "ice cream", "popcorn", "candy"];
+  for (var i = 0; i < junkFood.length; i++) {
+    let jf = junkFood[i];
+    if (this.foods.indexOf(jf) > -1) { return true; }
+  }
+  return false;
+ };
+
 
  /* Steps 91 to 100
  *
