@@ -1214,35 +1214,6 @@ var dinner = new Meal( ['fish', 'vegetables']);
  */
 
 
-/* Step 81
- *
- * Declare an Animal method called isWarmBlooded that returns
- * a true if the animal species is warm-blooded, false if cold-blooded.
- * Three species are provided below.  If the species is anything else,
- * return the string indicated below.
- *
- *            this.species =>
- *                "Fish"   => false
- *                "Monkey" => true
- *                "Bird"   => true
- *       Any other species => "Could not determine if warm-blooded"
- *
- */
-
- Animal.prototype.isWarmBlooded = function( ) {
-    switch (this.species) {
-      case "Fish":
-        return false;
-        break;
-      case 'Monkey':
-      case 'Bird':
-        return true;
-        break;
-      default:
-        return "Could not determine if warm-blooded";
-    }
- }
-
 
 /* Step 82
  *
@@ -1442,10 +1413,38 @@ Vehicle.prototype.drive = function( streetName ) {
  * and assign the values to each variable below.
  *
  */
-var warmBloodedAnimal;
-var coldBloodedAnimal;
-var notWarmOrColdAnimal;
 
+/* Step 81
+ *
+ * Declare an Animal method called isWarmBlooded that returns
+ * a true if the animal species is warm-blooded, false if cold-blooded.
+ * Three species are provided below.  If the species is anything else,
+ * return the string indicated below.
+ *
+ *            this.species =>
+ *                "Fish"   => false
+ *                "Monkey" => true
+ *                "Bird"   => true
+ *       Any other species => "Could not determine if warm-blooded"
+ *
+ */
+
+ Animal.prototype.isWarmBlooded = function( ) {
+    console.log(this.species);
+    switch (this.species) {
+      case "Fish":
+        return false;
+      case 'Monkey':
+      case 'Bird':
+        return true;
+      default:
+        return "Could not determine if warm-blooded";
+    }
+ };
+
+var warmBloodedAnimal = new Animal('Bird', 'male').isWarmBlooded();
+var coldBloodedAnimal = new Animal('Fish', 'female').isWarmBlooded();
+var notWarmOrColdAnimal = new Animal('Cat', 'male').isWarmBlooded();
 
 /* Step 92
  *
@@ -1453,8 +1452,8 @@ var notWarmOrColdAnimal;
  * and assign the values to each variable below.
  *
  */
-var streetDriving;
-var forwardDriving;
+var streetDriving = new Vehicle().drive('Main Street');
+var forwardDriving = new Vehicle().drive();
 
 
  /* Step 93
