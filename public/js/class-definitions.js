@@ -431,6 +431,15 @@ function sahara_river() {
  * @return {String}
  *
  */
+ function listLivingOrgClass() {
+   let ul = '<ul>';
+   livingOrganismClassification.reduce( (a, obj) => {
+      console.log(a, obj);
+      ul += `<li>${obj}</li>`;
+    }, 0);
+   ul += '</ul>';
+   return ul;
+ }
 
 
 /* Step 26
