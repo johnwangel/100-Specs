@@ -1351,6 +1351,9 @@ Vehicle.prototype.drive = function( streetName ) {
  * the color and size of the shoe ("Found red shoes of size 7").
  *
  */
+ Shoe.prototype.findShoes = function() {
+  return `Found ${this.color} shoes of size ${this.size}`;
+ };
 
 
  /* Step 87
