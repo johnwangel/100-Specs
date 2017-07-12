@@ -1365,6 +1365,11 @@ Vehicle.prototype.drive = function( streetName ) {
  *
  */
 
+ House.prototype.isATallStory = function( storiesTooTall ) {
+  if (this.stories >= storiesTooTall) { return true; }
+  return false;
+ }
+
 
  /* Step 88
  *
