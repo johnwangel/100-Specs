@@ -1368,7 +1368,7 @@ Vehicle.prototype.drive = function( streetName ) {
  House.prototype.isATallStory = function( storiesTooTall ) {
   if (this.stories >= storiesTooTall) { return true; }
   return false;
- }
+ };
 
 
  /* Step 88
@@ -1380,6 +1380,14 @@ Vehicle.prototype.drive = function( streetName ) {
  * Return true if isOn is true, false otherwise.
  *
  */
+ Lightbulb.prototype.flipSwitch = function( on ) {
+  if ( on === 'on') {
+    this.isOn = true;
+    return true;
+  }
+  this.isOn = false;
+  return false;
+ };
 
 
  /* Step 89
