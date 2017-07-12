@@ -70,6 +70,7 @@ let unicorn = null;
  * and assign the value of club_name to "Fight Club"
  *
  */
+ let club_name = "Fight Club";
 
 
 /* Step 9
