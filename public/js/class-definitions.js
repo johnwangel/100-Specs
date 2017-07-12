@@ -434,7 +434,6 @@ function sahara_river() {
  function listLivingOrgClass() {
    let ul = '<ul>';
    livingOrganismClassification.reduce( (a, obj) => {
-      console.log(a, obj);
       ul += `<li>${obj}</li>`;
     }, 0);
    ul += '</ul>';
@@ -461,6 +460,12 @@ function sahara_river() {
  * @return {String}
  *
  */
+ function favoritePlanet( planet ) {
+  if (planets.some( plan => plan === planet )) {
+    return  `I'm from ${planet}, but I wish I could go to ${planets[Math.floor(Math.random() * 9)]}`;
+  }
+  return `${planet} is not a planet!`;
+ }
 
 
 /* Step 27
