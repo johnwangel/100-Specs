@@ -1041,7 +1041,6 @@ class Vehicle {
     }
  }
 
-
 /**
  * Step 52
  *
@@ -1052,6 +1051,16 @@ class Vehicle {
  *
  */
 
+ class Shape {
+  constructor( sides ) {
+    if ( sides >= 3 ) {
+      this.sides = sides;
+    } else {
+      this.sides = null;
+    }
+  }
+ }
+
 
 /**
  * Step 53
@@ -1060,6 +1069,13 @@ class Vehicle {
  * @param {anything} contents The contents of the box
  * @param {boolean} isOpen     Whether the box is opened or closed
  */
+
+ class Box {
+  constructor( contents, isOpen ) {
+    this.contents = contents;
+    this.isOpen = isOpen;
+  }
+ }
 
 
 /**
