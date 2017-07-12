@@ -376,7 +376,6 @@ function sahara_river() {
  function drink( beer ) {
     let mykeys = Object.keys(beers);
     let isValid = mykeys.some( obj => obj === beer );
-    console.log(typeof beers[beer]);
 
     if (isValid && typeof beers[beer] === 'string') {
       return `This ${beer} is ${beers[beer]}.`;
@@ -397,6 +396,11 @@ function sahara_river() {
     }
  }
 
+ function checkObject(obj, item){
+    let mykeys = Object.keys(obj);
+    return mykeys.some( obj => obj === item );
+ }
+
 
 /* Step 24
  *
@@ -409,6 +413,13 @@ function sahara_river() {
  * @return {String if true else return false}
  *
  */
+
+ function browseURL( browser ) {
+  if (checkObject(browsers, browser)) {
+    return browsers[browser];
+  }
+  return false;
+ }
 
 
 /* Step 25
