@@ -34,7 +34,7 @@ let unicorn = null;
  * each planet in our solar system, in order of distance from the sun
  * Capitalize the names.
  */
-
+ let planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune'];
 
 /* Step 5
  *
