@@ -174,8 +174,6 @@ let gender = { female : 'female', male : 'male', unknown : undefined };
 
  };
 
-
-
 /* Step 14
  *
  * Declare an array named "linuxFlavors"
@@ -189,6 +187,14 @@ let gender = { female : 'female', male : 'male', unknown : undefined };
  * "Bieber Linux"
  *
  */
+ let linuxFlavors = [
+   "Gentoo",
+   "Fedora",
+   "Debian",
+   "Slackware",
+   "Red Hat",
+   "Bieber Linux",
+ ];
 
 
 /* Step 15
