@@ -685,6 +685,38 @@ Garden.prototype.grow = function() {
  *
  */
 
+PrincessLeia.prototype = Object.create(Person.prototype);
+
+function PrincessLeia(name, money, age, gender) {
+  this.name = name;
+  this.money = money;
+  this.age = age;
+  this.gender = gender;
+  this.isInTrouble = null;
+}
+
+PrincessLeia.prototype.shootsGun = function() {
+  isInTrouble = false;
+  return 'Leia shoots her gun wildly';
+};
+
+PrincessLeia.prototype.getsInTrouble = function() {
+  return 'Help me Obi-wan Kenobi, you\'re my only hope';
+  isInTrouble = true;
+};
+
+PrincessLeia.prototype.marries = function( man ) {
+  if (man === 'Han Solo') {
+    return true;
+  } else if ( man === 'Luke Skywalker') {
+    return 'Gross!';
+  } else {
+    return false;
+  }
+};
+
+
+
 
 /* Step 34
  *
