@@ -350,7 +350,10 @@ function sahara_river() {
  * @return {Bool}
  *
  */
+ function installLinux( linuxFlavor ) {
 
+    return  linuxFlavors.some( obj => obj === linuxFlavor );
+ }
 
 /* Step 23
  *
