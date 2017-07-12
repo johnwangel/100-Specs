@@ -1526,5 +1526,5 @@ var cookieMonsterBlocked = new Cookie('oreo').swipedByCookieMonster('Monday');
  * and assign the values to each variable below.
  *
  */
-var badForYou;
-var goodForYou;
+var badForYou = new Meal(['popcorn', 'soda']).containsJunkFood();
+var goodForYou = new Meal(['tofu', 'acai']).containsJunkFood();
