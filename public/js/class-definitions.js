@@ -603,6 +603,24 @@ class Person {
  *
  */
 
+function Garden( plantsTotal ) {
+  this.plantsTotal = plantsTotal;
+  this.isWatered = false;
+ }
+
+Garden.prototype.water = function(){
+  this.isWatered = true;
+};
+
+Garden.prototype.grow = function() {
+  if (this.isWatered) {
+    this.plantsTotal = this.plantsTotal+1;
+    this.isWatered = false;
+    return;
+  }
+  return false;
+};
+
 
 /* Step 32
  *
