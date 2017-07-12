@@ -43,6 +43,7 @@ let unicorn = null;
  * each galilean moon of Jupiter
  *
  */
+ let galilean_moons = ['Io', 'Europa', 'Ganymede', 'Callisto'];
 
 
 /* Step 6 φ
