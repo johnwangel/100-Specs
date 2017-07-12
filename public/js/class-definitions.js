@@ -814,7 +814,7 @@ PrincessLeia.prototype.marries = function( man ) {
       str += `${this.discoveries[i]}.`;
     } else if (i === 0) {
       str += `${this.discoveries[i]}`;
-      if (this.discoveries.length > 2 ) { str += ', '} else { str += ' and '};
+      if (this.discoveries.length > 2 ) { str += ', '} else { str += ' and '; };
     } else {
       str += `${this.discoveries[i]}, and `;
     }
@@ -1018,6 +1018,13 @@ PrincessLeia.prototype.marries = function( man ) {
  * @param {string} gender  male or female
  */
 
+ class Animal {
+    constructor(species, gender) {
+      this.species = species;
+      this.gender = gender;
+    }
+ }
+
 
 /**
  * Step 51
@@ -1026,6 +1033,13 @@ PrincessLeia.prototype.marries = function( man ) {
  * @param {string} make The vehicle's make
  * @param {string} model The vehicle's model
  */
+
+class Vehicle {
+    constructor(make, model) {
+      this.make = make;
+      this.model = model;
+    }
+ }
 
 
 /**
