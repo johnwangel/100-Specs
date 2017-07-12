@@ -23,6 +23,8 @@ let unicorn = null;
  * and assign the value of sahara_animal to "The Addax"
  *
  */
+ let sahara_animal;
+ sahara_animal  = 'The Addax';
 
 
 /* Step 4
