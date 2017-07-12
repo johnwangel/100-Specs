@@ -279,23 +279,37 @@ let scmList = [
    "cvs"
 ];
 
-/* Step 19
- *
- * Define a literal object named "beers" with
- * properties and values set to:
- *
- * IPA          => "Ale"
- * Lager        => "Strong"
- * Heffeweisen  => "German"
- * Stout        => [Array]
- *                  "Thick"
- *                  "Dark"
- * Porter       => "Bitter"
- * Ale          => [Array]
- *                  "Light"
- *                  "Golden"
- *
- */
+ // Step 19
+ // *
+ // * Define a literal object named "beers" with
+ // * properties and values set to:
+ // *
+ // * IPA          => "Ale"
+ // * Lager        => "Strong"
+ // * Heffeweisen  => "German"
+ // * Stout        => [Array]
+ // *                  "Thick"
+ // *                  "Dark"
+ // * Porter       => "Bitter"
+ // * Ale          => [Array]
+ // *                  "Light"
+ // *                  "Golden"
+ // *
+
+ let beers = {
+    IPA          : "Ale",
+    Lager        : "Strong",
+    Heffeweisen  : "German",
+    Stout        : [
+                     "Thick",
+                     "Dark"
+                    ],
+    Porter       : "Bitter",
+    Ale          : [
+                     "Light",
+                     "Golden"
+                    ]
+ };
 
 
 /* Step 20
