@@ -1306,7 +1306,7 @@ Vehicle.prototype.drive = function( streetName ) {
     default:
       return 'Could not determine type';
   }
-}
+};
 /* Step 84
  *
  * Declare a Box method called openBox that opens the box
@@ -1315,6 +1315,15 @@ Vehicle.prototype.drive = function( streetName ) {
  * Return true if openBox opens the box, false otherwise.
  *
  */
+
+ Box.prototype.openBox = function() {
+  if ( this.isOpen === false ) {
+    this.isOpen = true;
+    return true;
+  } else if ( this.isOpen === true ) {
+    return false;
+  }
+ };
 
 
  /* Step 85
