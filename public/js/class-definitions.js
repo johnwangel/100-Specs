@@ -61,6 +61,7 @@ let unicorn = null;
  * and assign the value of earths_water_composition to 0.71
  *
  */
+ let earths_water_composition = 0.71;
 
 
 /* Step 8
