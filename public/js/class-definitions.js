@@ -1,4 +1,11 @@
 /*jshint esversion: 6 */
+
+ function checkObject(obj, item){
+    let mykeys = Object.keys(obj);
+    return mykeys.some( obj => obj === item );
+ }
+
+
 /* Step 1
  *
  * Declare a variable named "unicorn"
@@ -351,7 +358,6 @@ function sahara_river() {
  *
  */
  function installLinux( linuxFlavor ) {
-
     return  linuxFlavors.some( obj => obj === linuxFlavor );
  }
 
@@ -394,11 +400,6 @@ function sahara_river() {
     } else {
       return false;
     }
- }
-
- function checkObject(obj, item){
-    let mykeys = Object.keys(obj);
-    return mykeys.some( obj => obj === item );
  }
 
 
@@ -507,7 +508,6 @@ class Person {
   }
 }
 
-
 /* Step 28
  *
  * Define a function named "purchaseLaptop" that takes
@@ -519,6 +519,13 @@ class Person {
  * @return {String}
  *
  */
+
+ function purchaseLaptop( laptop ) {
+  if (checkObject(laptopCosts, laptop)) {
+    return String(laptopCosts[laptop]);
+  }
+  return -1;
+ }
 
 
 /* Step 29
