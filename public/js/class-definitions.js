@@ -787,6 +787,42 @@ PrincessLeia.prototype.marries = function( man ) {
  *
  */
 
+ Scientist.prototype = Object.create(Person.prototype);
+
+ function Scientist(name, money, age, gender, disciplines, discoveries) {
+  this.name = name;
+  this.money = money;
+  this.age = age;
+  this.gender = gender;
+  this.disciplines = [];
+  this.discoveries = [];
+ }
+
+ Scientist.prototype.addDiscipline = function( discipline ) {
+  this.disciplines.push(discipline);
+ };
+
+ Scientist.prototype.checkDiscipline = function( discipline ) {
+  return this.disciplines.some( obj => obj === discipline );
+ };
+
+ Scientist.prototype.addDiscovery = function( discovery ) {
+  this.discoveries.push(discovery);
+  let str = `I discovered `;
+  for (var i = 0; i < this.discoveries.length; i++) {
+    if (i === this.discoveries.length-1){
+      str += `${this.discoveries[i]}.`;
+    } else if (i === 0) {
+      str += `${this.discoveries[i]}`;
+      if (this.discoveries.length > 2 ) { str += ', '} else { str += ' and '};
+    } else {
+      str += `${this.discoveries[i]}, and `;
+    }
+  }
+  return str;
+ };
+
+
 
 /* Step 36
  *
