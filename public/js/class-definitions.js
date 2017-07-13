@@ -402,7 +402,6 @@ function sahara_river() {
     }
  }
 
-
 /* Step 24
  *
  * Define a function named "browseURL" that takes
@@ -685,35 +684,51 @@ Garden.prototype.grow = function() {
  *
  */
 
-PrincessLeia.prototype = Object.create(Person.prototype);
+class PrincessLeia extends Person {
 
-function PrincessLeia(name, money, age, gender) {
-  this.name = name;
-  this.money = money;
-  this.age = age;
-  this.gender = gender;
-  this.isInTrouble = null;
+  constructor(name, money, age, gender) {
+    super();
+    this.name = name;
+    this.money = money;
+    this.age = age;
+    this.gender = gender;
+    this.isInTrouble = null;
+  }
+
+  shootsGun() {
+    this.isInTrouble = false;
+    return 'Leia shoots her gun wildly';
+  }
+
+  getsInTrouble() {
+    this.isInTrouble = true;
+    return 'Help me Obi-wan Kenobi, you\'re my only hope';
+  }
+
+  marries( man ) {
+    if (man === 'Han Solo') {
+      return true;
+    } else if ( man === 'Luke Skywalker') {
+      return 'Gross!';
+    } else {
+      return false;
+    }
+  }
 }
 
-PrincessLeia.prototype.shootsGun = function() {
-  isInTrouble = false;
-  return 'Leia shoots her gun wildly';
-};
+PrincessLeia.prototype = Object.create(Person.prototype);
 
-PrincessLeia.prototype.getsInTrouble = function() {
-  return 'Help me Obi-wan Kenobi, you\'re my only hope';
-  isInTrouble = true;
-};
+// function PrincessLeia() {
+//   this.name = name;
+//   this.money = money;
+//   this.age = age;
+//   this.gender = gender;
+//   this.isInTrouble = null;
+// }
 
-PrincessLeia.prototype.marries = function( man ) {
-  if (man === 'Han Solo') {
-    return true;
-  } else if ( man === 'Luke Skywalker') {
-    return 'Gross!';
-  } else {
-    return false;
-  }
-};
+
+
+
 
 
 
@@ -1506,8 +1521,7 @@ var shortStory = new House(1).isATallStory();
  *
  */
 var kitchenLightsOn = new Lightbulb().flipSwitch('on');
-var porchLightsOff = new Lightbulb().flipSwitch('off');;
-
+var porchLightsOff = new Lightbulb().flipSwitch('off');
 
  /* Step 99
  *
@@ -1517,8 +1531,6 @@ var porchLightsOff = new Lightbulb().flipSwitch('off');;
  */
 var cookieMonsterPwns = new Cookie('chocolate').swipedByCookieMonster('Monday');
 var cookieMonsterBlocked = new Cookie('oreo').swipedByCookieMonster('Monday');
-
-
 
  /* Step 100
  *
